@@ -5,8 +5,10 @@
       <label>Pesquisar</label>
       
       <div>
-        <input class="form-control">
-        <button class="btn btn-dark">
+        <input class="form-control" [formControl]="searchControl">
+        <button class="btn btn-dark"
+                [disabled]="!searchControl.valid"
+                (click)="doSearch()">
           Pesquisar
         </button>
       </div>
