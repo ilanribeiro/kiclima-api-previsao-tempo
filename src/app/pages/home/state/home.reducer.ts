@@ -3,11 +3,11 @@ import { createReducer, Action, on } from "@ngrx/store"
 import * as fromHomeActions from './home.actions';
 
 export interface HomeState {
-  text: string;
+  
 }
 
 export const homeInitialState: HomeState = {
-  text: 'Redux funcionando',
+  
 }
 
 // função do Ngrx
