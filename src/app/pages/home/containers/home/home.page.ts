@@ -5,8 +5,8 @@ import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { CityWeather } from 'src/app/shared/models/weather.model';
 
-import * as fromHomeActions from './state/home.actions';
-import * as fromHomeSelectors from './state/home.selectors';
+import * as fromHomeActions from '../../state/home.actions';
+import * as fromHomeSelectors from '../../state/home.selectors';
 
 
 @Component({
