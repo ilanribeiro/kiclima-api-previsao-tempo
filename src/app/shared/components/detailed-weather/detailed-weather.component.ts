@@ -13,6 +13,6 @@ export class DetailedWeatherComponent {
   @Input() weather: Weather;
 
   get weatherIcon(): string {
-    return `http://openweathermap.org/img/wn/${this.weather.icon}@2x.png`;
+    return `http://openweathermap.org/img/wn/${ this.weather.icon }@2x.png`;
   }
 }
