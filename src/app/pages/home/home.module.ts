@@ -24,3 +24,6 @@ import { CurrentWeatherComponent } from './components/current-weather/current-we
   ]
 })
 export class HomeModule { }
+
+
+// video8: 21m
