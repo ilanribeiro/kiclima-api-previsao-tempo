@@ -26,7 +26,7 @@ export class DetailsPage implements OnInit {
   constructor(private store: Store<AppState>) {
   };
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.store.dispatch(fromDetailsActions.loadWeatherDetails());
 
     this.details$ = this.store.pipe(select(fromDetailsSelectors.selectDetailsEntity));
