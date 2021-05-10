@@ -13,7 +13,8 @@ import { HomeModule } from './pages/home/home.module';
 import { BookmarksModule } from './pages/bookmarks/bookmarks.module';
 import { environment } from '../environments/environment';
 import { ComponentsModule } from './shared/components/components.module';
-
+import { reducers } from './shared/state/app.reducer';
+import { CustomRouterSerializer } from './shared/state/router/router.reducer';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,10 @@ import { ComponentsModule } from './shared/components/components.module';
     HttpClientModule,
     BookmarksModule,
     ComponentsModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
-    StoreRouterConnectingModule.forRoot({})
+    StoreRouterConnectingModule.forRoot({ serializer: CustomRouterSerializer })
   ],
   providers: [],
   bootstrap: [AppComponent]
