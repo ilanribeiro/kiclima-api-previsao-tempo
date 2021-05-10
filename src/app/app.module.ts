@@ -23,6 +23,7 @@ import { CustomRouterSerializer } from './shared/state/router/router.reducer';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HomeModule,
     HttpClientModule,
