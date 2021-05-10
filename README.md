@@ -1,27 +1,34 @@
-# JvWeather
+# **ki.clima**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+### Previsão do tempo a partir de onde estiver.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+#### Por que esse projeto?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Essa solução foi criada como parte da evolução do aprendizado conseguido através do Bootcamp Angular Avanade, na Digital Innovation One (DIO).
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+#### Quais os maiores desafios?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Houveram alguns. Parte desses desafios foram de ordem pessoal, buscando conseguir disponibilidade de tempo para realizar todo esse projeto de forma que estivesse realmente aprendendo o que estava fazendo.
 
-## Running end-to-end tests
+Também houveram desafios de ordem técnica. O principal deles foi sobre o correto entendimento sobre a utilização do gerenciamento do estado com o ngrx.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Quais tecnologias utilizadas nesse projeto?
+
+Toda a solução foi criada com o Framework Angular, na versão 9.
+Além disso foram utilizadas algumas bibliotecas externas, como o Bootstrap, Ngrx, js-earch, Moment-timezone, tslib e zone.js.
+
+
+
+
+
+
+
+
+
+  
