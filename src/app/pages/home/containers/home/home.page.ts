@@ -8,7 +8,7 @@ import { map, takeUntil } from 'rxjs/operators';
 import { Bookmark } from 'src/app/shared/models/bookmark.model';
 import { CityWeather } from 'src/app/shared/models/weather.model';
 import * as fromHomeActions from '../../state/home.actions';
-import * as fromHomeSelectors from 'src/app/pages/home/state/home.selectors';
+import * as fromHomeSelectors from '../../state/home.selectors';
 import * as fromBookmarksSelectors from '../../../bookmarks/state/bookmarks.selectors';
 
 @Component({
@@ -37,7 +37,7 @@ export class HomePage implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.searchControl = new FormControl('', Validators.required);
 
-    this.cityWeather$ = this.store.pipe(select(fromHomeSelectors.selectCurrentWeather));
+    this.cityWeather$ = this.store.pipe(select(fromHomeSelectors.selecCurrentWeather));
     this.cityWeather$
       .pipe(takeUntil(this.componentDestroyed$))
       .subscribe(value => this.cityWeather = value);
